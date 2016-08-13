@@ -1,22 +1,27 @@
-.. react-fiar documentation master file, created by
-   sphinx-quickstart on Sat Aug 13 17:34:51 2016.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+-------------
+Introduction
+-------------
+This game implements the game "Five in A Row" using `react`_.
 
-react-fiar (Game: Five in A Row)
-======================================
+-----------
+Notices
+-----------
+This game is at the very early development stage and buggy. The author will improve it at his free time.
 
-Contents:
+-------------
+Download
+-------------
+git clone https://github.com/myhlivecom/react-fiar.git
 
-.. toctree::
-   :maxdepth: 2
+-----
+Run
+-----
+Open index.html by your favorite browser.
 
-   Contents
+-----
+Claim
+-----
+This game is developed based on the GitHub project `react-go`_.
 
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
-
+.. _react: http://facebook.github.io/react/
+.. _react-go: https://github.com/cjlarose/react-go
