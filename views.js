@@ -1,4 +1,3 @@
-/** @jsx React.DOM */
 var GRID_SIZE = 40;
 
 var BoardIntersection = React.createClass({
@@ -30,13 +29,13 @@ var BoardView = React.createClass({
         var intersections = [];
         for (var i = 0; i < this.props.board.size; i++)
             for (var j = 0; j < this.props.board.size; j++)
-                intersections.push(BoardIntersection({
-                    board: this.props.board,
-                    color: this.props.board.board[i][j],
-                    row: i,
-                    col: j,
-                    onPlay: this.props.onPlay
-                }));
+                intersections.push(<BoardIntersection
+                    board = {this.props.board}
+                    color =  {this.props.board.board[i][j]}
+                    row = {i}
+                    col = {j}
+                    onPlay = {this.props.onPlay}
+                />);
         var style = {
             width: this.props.board.size * GRID_SIZE,
             height: this.props.board.size * GRID_SIZE
@@ -86,13 +85,13 @@ var ContainerView = React.createClass({
                 <AlertView board={this.state.board} />
                 <PassView board={this.state.board} />
                 <BoardView board={this.state.board} 
-                    onPlay={this.onBoardUpdate.bind(this)} />
+                    onPlay={this.onBoardUpdate} />
             </div>
         )
     }
 });
 
-React.renderComponent(
+ReactDOM.render(
     <ContainerView board={board} />,
     document.getElementById('main')
 );
