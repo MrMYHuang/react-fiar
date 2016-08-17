@@ -1,0 +1,6 @@
+{
+  "name": "React-fiar",
+  "tagline": "Five in A Row Game Implemented by React",
+  "body": "-------------\r\nIntroduction\r\n-------------\r\nThis game implements the game \"Five in A Row\" using `react`_.\r\n\r\n-----------\r\nNotices\r\n-----------\r\nThis game is at the very early development stage and buggy. The author will improve it at his free time.\r\n\r\n-------------\r\nDownload\r\n-------------\r\ngit clone https://github.com/myhlivecom/react-fiar.git\r\n\r\n-----\r\nRun\r\n-----\r\nOpen index.html by your favorite browser.\r\n\r\n-----\r\nClaim\r\n-----\r\nThis game is developed based on the GitHub project `react-go`_.\r\n\r\n.. _react: http://facebook.github.io/react/\r\n.. _react-go: https://github.com/cjlarose/react-go\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
